@@ -5,7 +5,7 @@ module AssertLatestAndGreatest
   def assert_latest(*models, &block)
     models, diagnostic = _get_latest_args(models, 'assert')
     latests = get_latest(models, &block)
-    latests.compact.length == models.length or
+    latests.compact.length == models.length and add_assertion or
       _flunk_latest(models, latests, diagnostic, true, block)
     return *latests
   end
