@@ -1,1 +1,16 @@
-A fork of Phlip's assert2 (http://assert2.rubyforge.org) with bug fixes.
+A fork of Phlip's assert2 (http://assert2.rubyforge.org) with bug fixes and merged assert_latest
+
+assert { foo == 42 }
+
+# For Rails or anything responding to .maximum and .find
+assert_latest Account, User do 
+  account = Account.create(:name => 'Foo Mart')
+  account.users.create(:login => 'foo-guy')
+end
+
+# You can grab the created records thusly:
+account, user = assert_latest Account, User do 
+  account = Account.create(:name => 'Foo Mart')
+  account.users.create(:login => 'foo-guy')
+end
+

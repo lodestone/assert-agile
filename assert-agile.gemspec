@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = "assert-agile"
-  s.version  = "0.4"
+  s.version  = "0.4.1"
   s.date     = "2008-11-07"
   s.summary  = "Assert with radioactive spider power."
   s.email    = "matt@kizmeta.com"
@@ -8,7 +8,9 @@ Gem::Specification.new do |s|
   s.description = "Assertion Sugar. Better block assertions - Forked from assert2.rubyforge.org"
   s.has_rdoc = true
   s.authors  = ["Matt Petty"]
-  s.files    = ["CHANGELOG", "LICENSE",
+  s.files    = [
+    "CHANGELOG", 
+    "LICENSE",
     "assert-agile.gemspec",
     "init.rb",
     "install.rb",
