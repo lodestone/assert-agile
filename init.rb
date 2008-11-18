@@ -1,0 +1,1 @@
+require 'assert2' if RAILS_ENV == 'test'
