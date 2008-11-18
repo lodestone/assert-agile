@@ -1,1 +1,1 @@
-require 'assert2' if RAILS_ENV == 'test'
+require 'assert_agile' if RAILS_ENV == 'test'
