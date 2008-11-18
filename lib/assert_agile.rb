@@ -215,5 +215,5 @@ module AssertAgile
 end  #  "Eagle-eyes it!"
 
 class Test::Unit::TestCase #:nodoc:
-  include Assert_2_0
+  include AssertAgile
 end
