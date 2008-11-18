@@ -10,7 +10,7 @@ require File.dirname(__FILE__) + '/assert_latest_and_greatest'
 module Assert_2_0
   include RubyNodeReflector
   include Coulor #:nodoc:
-  # include AssertLatestAndGreatest
+  include AssertLatestAndGreatest
   #  This assertion calls a block, and faults if this returns
   #  +false+ or +nil+. The fault diagnostic will reflect the
   #  intermediate value of every variable and expression in the
